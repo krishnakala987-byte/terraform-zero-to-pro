@@ -13,10 +13,10 @@ provider "aws" {
 
 data "aws_caller_identity" "current" {}
 
-output "accound_id" {
+output "account_id" {
   value = data.aws_caller_identity.current.account_id
 }
 
-output "usr_arn" {
+output "user_arn" {
   value = data.aws_caller_identity.current.arn
 }
